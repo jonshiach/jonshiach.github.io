@@ -42,8 +42,8 @@ The creation of electronic music and the streaming of music over the internet us
 
 [Preview](../files/outreach/zombie_notebook.html)
 
-<img src="https://raw.githubusercontent.com/jonshiach/outreach/main/Zombie/Images/running zombie.png" width=150 align="left">
-<img src="https://raw.githubusercontent.com/jonshiach/outreach/main/Zombie/Images/covid.png" align=right width=100>
+<img src="https://raw.githubusercontent.com/jonshiach/outreach/main/Zombie/images/running zombie.png" width=150 align="left">
+<img src="https://raw.githubusercontent.com/jonshiach/outreach/main/Zombie/images/covid.png" align=right width=100>
 This session will introduce participants to a mathematical modelling technique called *agent-based modelling* where individual autonomous agents which could be a single animal or person are given rules to govern their behaviour. For example, in a social distancing situation each agent will want to avoid getting too close to another agent. We can use agent-based modelling to build mathematical models that simulate the motion of a flock of birds and the transmission of infectious diseases such as Covid or a zombie outbreak (unlikely to happen but you never know). 
 
 ## Jupyter notebooks
@@ -65,7 +65,7 @@ To run the notebooks you will first need to make sure you have Jupyter installed
 4. Using the file browser which should have opened in your web browser, navigate to the notebook you downloaded and click on it. This should open the Jupyter notebook.
 5. Click on the run all button to run the notebook. This will execute any code that has been entered in to the code cells. To run an individual cell click on it and click on the run button.
 
-<img src="../Images/jupyter_notebook.png" align=center>
+<img src="../images/jupyter_notebook.png" align=center>
 
 ### Google Colab
 
@@ -75,6 +75,6 @@ If you are unable to install Jupyter on your computer you can run Jupyter notebo
 2. Go to [https://colab.research.google.com/](https://colab.research.google.com/) and log into your Google account.
 3. Click on **Upload** and upload the notebook you have downloaded.
 4. Click on **Runtime** and **Run all** to run the notebook
-<img src="../Images/colab_1.png" align=center>
+<img src="../images/colab_1.png" align=center>
 6. To run an individual code cell click on it and then click on the play button to the left of the cell. 
-<img src="../Images/colab_2.png" align=center>
+<img src="../images/colab_2.png" align=center>
