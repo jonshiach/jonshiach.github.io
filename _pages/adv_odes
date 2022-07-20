@@ -1,0 +1,26 @@
+---
+title: "Advanced Ordinary Differential Equations and Dynamical Systems"
+collection: teaching
+type: "Undergraduate course"
+permalink: /teaching/Adv_ODEs/
+venue: "Manchester Metropolitan University"
+date: 2021-01-01
+location: "Manchester, UK"
+excerpt_separator: <!--more-->
+toc: true
+---
+
+A fourth year (MMath) unit that goes into more depth on numerical methods for solving ODEs.
+
+[Runge-Kutta Methods Lecture Notes](/files/notes/Adv_ODEs.pdf){:target="_blank"}
+
+<!--more-->
+
+Topics include:
+
+- the derivation of Runge-Kutta methods using trees
+- adaptive step size control
+- implicit Runge-Kutta method
+- Newton's method for systems of nonlinear equations
+- stability and order stars
+- the n-body problem.
