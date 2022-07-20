@@ -2,10 +2,13 @@
 title: "Teaching"
 permalink: /teaching/
 author_profile: true
+toc: true
 ---
 
 {% include base_path %}
 {% include toc %}
+
+<script src="/js/toc.js"></script>
 
 During my career I have taught a number of different units across several degree programmes. I currently teach units on linear algebra, programming, computer graphics, numerical methods for ODEs and graduate development and employability.
 
