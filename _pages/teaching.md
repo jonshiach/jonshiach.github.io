@@ -2,7 +2,6 @@
 title: "Teaching"
 permalink: /teaching/
 author_profile: true
-toc: true
 ---
 
 {% include base_path %}
@@ -30,7 +29,7 @@ A first year unit that develops students' employability skills and explores how 
 
 A third year content that covers numerical methods for solving Ordinary Differential Equations (ODEs) and linear systems of equations.
 
-- <a href="https://jonshiach.github.io/ODEs-book/" target="_blank">Runge-Kutta Methods and Computational Linear Algebra Lecture notes</a>
+- <a href="https://jonshiach.github.io/ODEs-book/" target="_blank">Runge-Kutta Methods and Linear Algebra Lecture notes</a>
 
 ## Computational Mathematics
 
@@ -38,7 +37,7 @@ A second year unit that examines the implementation of mathematics in modern com
 
 - [Computer Graphics Lecture notes](/files/notes/graphics_notes.pdf){:target="_blank"}
 - [Digital Sound Processing Lecture Notes](/files/notes/sound_processing_notes.pdf){:target="_blank"}
-- [Computing Mathematics Lecture Notes](/files/notes/computing_maths_notes.pdf)
+- [Computing Mathematics Lecture Notes](/files/notes/computing_maths_notes.pdf){:target="_blank"}
 
 ## Numerical Methods for Partial Differential Equations
 
