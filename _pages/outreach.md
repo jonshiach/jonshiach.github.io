@@ -43,13 +43,13 @@ The creation of electronic music and the streaming of music over the internet us
 
 This session will introduce participants to a mathematical modelling technique called *agent-based modelling* where individual autonomous agents which could be a single animal or person are given rules to govern their behaviour. For example, in a social distancing situation each agent will want to avoid getting too close to another agent. We can use agent-based modelling to build mathematical models that simulate the motion of a flock of birds and the transmission of infectious diseases such as Covid or a zombie outbreak (unlikely to happen but you never know).
 
-## Jupyter notebooks
+## Downloads
 
 The outreach materials are written in Jupyter which makes it easy to enter and execute Python code. The individual notebooks for the various sessions can be downloaded by clicking on the links below.
 
 - [Fractals](/files/outreach/Fractals.ipynb)
-- [Chaos](/files/outreach/Chaos.zip)
-- [Mathematics of music](/files/outreach/Music.zip)
+- [Chaos](/files/outreach/Chaos.ipynb) (you will also need to download [this file](/files/outreach/animations.py) to the same directory)
+- [Mathematics of music](/files/outreach/Music.ipynb) (you will also need to download the audio file <a href="/files/outreach/Fur_elise.wav" download>Fur_elise.wav</a> to the same directory)
 - [Mathematical a zombie outbreak](/files/outreach/Zombie.ipynb)
 
 Instructions on how to run Jupyter notebooks is given [here](/jupyter-notebook){:target="_blank"}.

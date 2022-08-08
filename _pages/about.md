@@ -8,4 +8,4 @@ I am a senior lecturer in the Department of Computing and mathematics at the [Ma
 
 My research was in computational fluid dynamics, in particular using finite-volume methods for solving depth-integrated equations. I was awarded my PhD in Mathematics in 2008 by the Manchester Metropolitan University for my [thesis](/files/papers/shiach_thesis.pdf) titled "Numerical modelling of wave run-up and overtopping using depth integrated equations".
 
-In my spare time I enjoy cycling and am a keen supporter of [Gloucester Rugby](https://www.gloucesterrugby.co.uk/). I have four cats and have been attempting to learn how to play the guitar for about twenty years.  
+In my spare time I enjoy cycling and am a keen supporter of [Gloucester Rugby](https://www.gloucesterrugby.co.uk/). I have four cats and have been attempting to learn how to play the guitar for about twenty years.

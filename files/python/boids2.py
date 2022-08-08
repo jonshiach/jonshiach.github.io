@@ -9,19 +9,39 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib import animation, collections
 
+def Norm(x, y):
+    return np.sqrt(x ** 2 + y ** 2)
+
+
+def Distance(x1, y1, x2, y2):
+    return np.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2)
+
+
+def Limit(x, y, lower, upper):
+    norm = Norm(x, y)
+    if norm < lower:
+        x = x / norm * lower
+        y = y / norm * lower
+    elif norm > upper:
+        x = x / norm * upper
+        y = y / norm * upper
+        
+    return x, y
+
+
 class boid:
     
     def __init__(self):
         self.x = width * np.random.rand()   # x co-ordinate
         self.y = height * np.random.rand()  # y co-ordinate
-        self.vx = np.random.uniform(-1, 1)  # velocity in the x direction
-        self.vy = np.random.uniform(-1, 1)  # velocity in the y direction
+        self.u = np.random.uniform(-1, 1)   # velocity in the x direction
+        self.v = np.random.uniform(-1, 1)   # velocity in the y direction
         self.sx = 0                         # steering force in the x direction
         self.sy = 0                         # steering force in the y direction
         self.minspeed = 5                   # minimum speed of the agent
         self.maxspeed = 10                  # maximum speed of the agent
         self.neighbours = []                # list of neighbouring agents
-        self.vx, self.vy = Limit(self.vx, self.vy, self.minspeed, self.maxspeed)
+        self.u, self.v = Limit(self.u, self.v, self.maxspeed, self.maxspeed)
        
 
     def Neighbours(self, boidList):
@@ -29,121 +49,104 @@ class boid:
         for neighbour in boidList: 
             if id(self) == id(neighbour):
                 continue
-            dx = neighbour.x - self.x
-            dy = neighbour.y - self.y
-            if abs(dx) < detection_radius and abs(dy) < detection_radius:
-                d = dx ** 2 + dy ** 2
-                if d < detection_radius ** 2:
-                    self.neighbours.append(neighbour)
+            d = Distance(self.x, self.y, neighbour.x, neighbour.y)
+            if d < detection_radius:
+                self.neighbours.append(neighbour)
                     
                     
     def Move(self):
-        self.vx += self.sx
-        self.vy += self.sy
-        self.vx, self.vy = Limit(self.vx, self.vy, self.minspeed, self.maxspeed)
-        self.x += self.vx * dt
-        self.y += self.vy * dt
+        self.u += self.sx
+        self.v += self.sy
+        self.u, self.v = Limit(self.u, self.v, self.minspeed, self.maxspeed)
+        self.x += self.u * dt
+        self.y += self.v * dt
         self.sx = self.sy = 0
 
 
     def AvoidEdges(self):
-        buffer = 2
-        if self.x < buffer:
-            self.sx += 1 / self.x ** 2
-        if self.x > width - buffer:
-            self.sx -= 1 / (width - self.x) ** 2
-        if self.y < buffer:
-            self.sy += 1 / self.y ** 2
-        if self.y > height - buffer:
-            self.sy -= 1 / (height - self.y) ** 2
+        steer_x, steer_y = 0, 0
+        buffer = 4
+        if self.x <= buffer:
+            steer_x += buffer / self.x
+        if self.x >= width - buffer:
+            steer_x -= buffer / (width - self.x)
+        if self.y <= buffer:
+            steer_y += buffer / self.y
+        if self.y >= height - buffer:
+            steer_y -= buffer / (height - self.y)
         
-
+        steer_x, steer_y = Limit(steer_x, steer_y, 0, edge_force)
+        self.sx += steer_x
+        self.sy += steer_y
+    
+    
     def AvoidObstacles(self):
-        vx, vy = Limit(self.vx, self.vy, detection_radius, detection_radius)
-        aheadx = self.x + vx
-        aheady = self.y + vy
-        dmin = 1e6
-        for i in range(len(obs_x)):
-            d = (aheadx - obs_x[i]) ** 2 + (aheady - obs_y[i]) ** 2
-            if d < 1.1 * obs_r[i] ** 2 and d < dmin:
-                cx = obs_x[i]
-                cy = obs_y[i]
-                dmin = d
-                
-        if dmin < 1e6:
-            steer_x = aheadx - cx
-            steer_y = aheady - cy
-            d = steer_x ** 2 + steer_y ** 2
-            self.sx, self.sy = Limit(steer_x, steer_y, 1, 1)
-            
-        
+    
+        see_ahead_length = 5 * Norm(self.u, self.v) / self.maxspeed
+        u, v = Limit(self.u, self.v, 1, 1)
+        x = self.x + u * see_ahead_length
+        y = self.y + v * see_ahead_length
+        for i in range(len(Ox)):
+            if Distance(x, y, Ox[i], Oy[i]) <= 1 + Or[i]:
+                d = Distance(self.x, self.y, Ox[i], Oy[i])
+                steer_x = (x - Ox[i])
+                steer_y = (y - Oy[i])
+                steer_x, steer_y = Limit(steer_x, steer_y, 0, obstacle_force)
+                self.sx += steer_x
+                self.sy += steer_y
+
         
     def Alignment(self):
-        n, steer_x, steer_y = 0, 0, 0
+        n, avg_vx, avg_vy = 0, 0, 0
         for neighbour in self.neighbours:
-            steer_x += neighbour.vx
-            steer_y += neighbour.vy
+            avg_vx += neighbour.u
+            avg_vy += neighbour.v
             n += 1
             
         if n > 0:
-            steer_x = steer_x / n - self.vx
-            steer_y = steer_y / n - self.vy
-            self.sx, self.sy = Limit(steer_x, steer_y, 0, alignment_force)
+            steer_x = avg_vx / n - self.u
+            steer_y = avg_vy / n - self.v
+            steer_x, steer_y = Limit(steer_x, steer_y, 0, alignment_force)
+            self.sx += steer_x
+            self.sy += steer_y
 
 
     def Cohesion(self):
-        n, steer_x, steer_y = 0, 0, 0
+        n, avg_x, avg_y = 0, 0, 0
         for neighbour in self.neighbours:
-            steer_x += neighbour.x
-            steer_y += neighbour.y
+            avg_x += neighbour.x
+            avg_y += neighbour.y
             n += 1
             
         if n > 0:
-            steer_x = steer_x / n - self.x
-            steer_y = steer_y / n - self.y
-            self.sx, self.sy = Limit(steer_x, steer_y, 0, cohesion_force)
+            steer_x = avg_x / n - self.x
+            steer_y = avg_y / n - self.y
+            steer_x, steer_y = Limit(steer_x, steer_y, 0, cohesion_force)
+            self.sx += steer_x
+            self.sy += steer_y
 
     
     def Separation(self):
         steer_x, steer_y = 0, 0
         for neighbour in self.neighbours:
-            d = (self.x - neighbour.x) ** 2 + (self.y - neighbour.y) ** 2
+            d = Distance(self.x, self.y, neighbour.x, neighbour.y)
             if d < separation_radius ** 2:
                 steer_x += (self.x - neighbour.x) / d
                 steer_y += (self.y - neighbour.y) / d
                 
-        self.sx, self.sy = Limit(steer_x, steer_y, 0, separation_force)
+        steer_x, steer_y = Limit(steer_x, steer_y, 0, separation_force)
+        self.sx += steer_x
+        self.sy += steer_y
                 
     
     def Steer(self):
         self.Alignment()
         self.Cohesion()
         self.Separation()
-        self.sx, self.sy = Limit(self.sx, self.sy, 0, max_steering_force)
-        self.AvoidEdges()
         self.AvoidObstacles()
-
-
-def ScaleVector(vx, vy, scale):
-    norm = np.sqrt(vx ** 2 + vy ** 2)
-    if norm > 0:
-        vx = vx / norm * scale
-        vy = vy / norm * scale
-    
-    return vx, vy
-
-
-def Limit(vx, vy, lower, upper):
-    norm = np.sqrt(vx ** 2 + vy ** 2)
-    if norm < lower:
-        vx = vx / norm * lower
-        vy = vy / norm * lower
-    elif norm > upper:
-        vx = vx / norm * upper
-        vy = vy / norm * upper
+        self.AvoidEdges()
+        self.sx, self.sy = Limit(self.sx, self.sy, 0, max_steering_force)
         
-    return vx, vy
-
     
 def Update(n):
     
@@ -159,7 +162,7 @@ def Update(n):
     
         # Plot agent as an isocelese triangle
         scale = 0.3
-        angle = np.arctan2(boid.vy, boid.vx)
+        angle = np.arctan2(boid.v, boid.u)
         c, s = np.cos(angle), np.sin(angle)
         verts = np.array([[-1, -1, 1], [2, 0, 1], [-1, 1, 1]])
         T = np.array([[1, 0, 0], [0, 1, 0], [boid.x, boid.y, 1]])
@@ -174,24 +177,27 @@ def Update(n):
 
 
 # Model parameters
-nboids = 50                # number of boids
+nboids = 100                # number of boids
 tmax = 20                  # max time for the simulation
 fps = 60                   # frames per second for the animation
-dt = 1 / fps               # time elapsed during 1 frame
+dt = 1 / fps               # seconds elapsed during 1 frame of the animation
 width, height = 60, 40     # dimensions of the region
 detection_radius = 5       # radius for detecting neighbouring agents
-separation_radius = 2      # radius for separating agents
+separation_radius = 1      # radius for separating agents
 
 # Steering forces
-alignment_force = 0.1
-cohesion_force = 0.05
-separation_force = 0.1
-max_steering_force = 0.2  
+alignment_force = 0.15
+cohesion_force = 0.1
+separation_force = 0.2
+obstacle_force = 1
+edge_force = 1
+max_steering_force = 0.3
 
 # Define Obstacles (circle centre co-ordinates and radius)
-obs_x = [20, 40]
-obs_y = [20, 20]
-obs_r = [5, 5]
+Ox = [20, 40, 30]
+Oy = [13, 13, 26]
+Or = [4, 4, 4]
+# Ox = []
 
 # Generate agent list
 np.random.seed(0)
@@ -206,13 +212,9 @@ patches = [plt.Polygon(np.zeros((3,2))) for _ in range(nboids)]
 collection = collections.PatchCollection(patches)
 ax.add_collection(collection)
 ax.add_patch(plt.Rectangle((0, 0), width, height, fc="none", ec="k", lw=4))
-for i in range(len(obs_x)):
-    ax.add_patch(plt.Circle((obs_x[i], obs_y[i]), obs_r[i], ec="k", fc="none"))
+for i in range(len(Ox)):
+    ax.add_patch(plt.Circle((Ox[i], Oy[i]), Or[i], fc="gray", ec="k"))
 
-# Create and save animation 
-import time
-start = time.time()
-anim = animation.FuncAnimation(fig, Update, frames=tmax * fps, blit=True)
+# Create animation 
+anim = animation.FuncAnimation(fig, Update, frames=int(tmax * fps), blit=True)
 anim.save("boids.mp4", writer=animation.FFMpegWriter(fps=fps))
-
-print(time.time() - start)
