@@ -14,7 +14,7 @@ If you are interested in arranging an outlook session please contact our faculty
 
 <p style="text-align: center"><img src="/images/mandelbrot.png" width="400" /></p>
 
-[Preview](../files/outreach/fractals.html){:target="_blank"}
+[Preview](../files/outreach/Fractals.html){:target="_blank"}
 
 Fractals are complex and beautiful shapes that are generated using a simple set of mathematical rules. This session will introduce participants to some common fractals, show how they are drawn and how we can write Python programs to do this.
 
@@ -22,7 +22,7 @@ Fractals are complex and beautiful shapes that are generated using a simple set 
 
 <p style="text-align: center"><img src="/images/lorenz.png" width="300" /></p>
 
-[Preview](../files/outreach/chaos.html){:target="_blank"}
+[Preview](../files/outreach/Chaos.html){:target="_blank"}
 
 You may have heard of the Butterfly effect which comes from the question *“Does the flap of a butterfly’s wings in Brazil set off a tornado in Texas?”*, in other words, can a very small change in a system result in large changes elsewhere? This is what mathematicians refer to as chaos and in this session participants will be introduced to some examples of chaotic behaviour in relatively simple systems such as the motion of a double pendulum and the orbits of bodies acting under gravity.  
 
@@ -30,13 +30,13 @@ You may have heard of the Butterfly effect which comes from the question *“Doe
 
 <p style="text-align: center"><img src="/images/signal.png" width="400" /></p>
 
-[Preview](../files/outreach/music.html){:target="_blank"}
+[Preview](../files/outreach/Music.html){:target="_blank"}
 
 The creation of electronic music and the streaming of music over the internet used by apps such as Spotify, YouTube and TikTok would not be possible without mathematics. In this session you will be introduced to sine waves and how they can be combined to produce audio signals that replicate musical notes. In addition, you will see how a mathematical theory published 200 years ago is used to encode audio signals so they can be compressed and streamed over the internet.
 
 ## Modelling a zombie outbreak
 
-[Preview](../files/outreach/zombie.html){:target="_blank"}
+[Preview](../files/outreach/Zombie.html){:target="_blank"}
 
 <img src="/images/running zombie.png" width=130 align="left">
 <img src="/images/covid.png" align=right width=100>
