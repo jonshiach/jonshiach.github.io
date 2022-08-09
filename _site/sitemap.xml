@@ -1,20 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/posts/2012/08/blog-post-1/</loc>
-<lastmod>2012-08-14T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/posts/2013/08/blog-post-2/</loc>
-<lastmod>2013-08-14T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/posts/2014/08/blog-post-3/</loc>
-<lastmod>2014-08-14T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/posts/2012/08/blog-post-4/</loc>
-<lastmod>2015-08-14T00:00:00+01:00</lastmod>
+<loc>http://localhost:4000/posts/2022/08/manim/</loc>
+<lastmod>2022-08-08T00:00:00+01:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/publication/2004-swe-overtopping</loc>
@@ -67,6 +55,15 @@
 <loc>http://localhost:4000/archive-layout-with-content/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/year-archive/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/blog/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/categories/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/cv/</loc>
 </url>
 <url>
@@ -88,10 +85,16 @@
 <loc>http://localhost:4000/outreach/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/posts/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/publications/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/sitemap/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tags/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/teaching/</loc>
