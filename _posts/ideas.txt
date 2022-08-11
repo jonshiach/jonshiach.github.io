@@ -1,4 +1,5 @@
 Ideas for posts:
 
-manim
+manim - done
 boids
+thoughts on the pandemic
