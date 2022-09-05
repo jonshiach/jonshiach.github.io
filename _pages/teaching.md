@@ -19,30 +19,12 @@ A first year unit that introduces students to linear algebra. Topics include mat
 
 A first year unit that introduces students to programming in Python and MATLAB. The programming skills materials take the form of [Jupyter notebooks](https://jupyter.org/) for Python and [MATLAB live scripts](https://uk.mathworks.com/help/matlab/live-scripts-and-functions.html) for MATLAB. This allows students to enter and execute code in the same document as the instructional material. For instructions on how to download and install Jupyter click [here](/jupyter-notebook){:target="_blank"}.
 
-### Python materials
-
-1. [Python basics](/files/Python_materials/1_python_basics.ipynb)
-2. [Arrays](/files/Python_materials/2_arrays.ipynb)
-3. [If statements](/files/Python_materials/3_if_statements.ipynb)
-4. [Loops](/files/Python_materials/4_loops.ipynb)
-5. [Functions](/files/Python_materials/5_functions.ipynb)
-6. [Plotting](/files/Python_materials/6_plotting.ipynb) (you will also need to download the files <a href="/files/Python_materials/flower.jpg" download target="_blank">flower.jpg</a> and  <a href="/files/Python_materials/new_JD_building.jpg" download target="_blank">new_JD_building.jpg</a>).
-7. [Symbolic mathematics](/files/Python_materials/7_symbolic_mathematics.ipynb){:target="_blank"}
-
-### MATLAB materials
-
-1. [MATLAB basics](/files/MATLAB_materials/M1_matlab_basics.mlx)
-2. [Arrays](/files/MATLAB_materials/M2_arrays.mlx)
-3. [If statements](/files/MATLAB_materials/M3_if_statements.mlx)
-4. [Loops](/files/MATLAB_materials/M4_loops.mlx)
-5. [Functions](/files/MATLAB_materials/M5_functions.mlx)
-6. [Plotting](/files/MATLAB_materials/M6_plotting.mlx) (you will also need to download the files <a href="/files/Python_materials/flower.jpg" download target="_blank">flower.jpg</a> and  <a href="/files/Python_materials/new_JD_building.jpg" download target="_blank">new_JD_building.jpg</a>).
-7. [Symbolic mathematics](/files/MATLAB_materials/M7_symbolic_mathematics.mlx)
+- [Python materials](/files/Python_materials/Python_materials.zip)
+- [MATLAB materials](/files/MATLAB_materials/MATLAB_materials.zip)
 
 ## Graduate Development and Employability
 
 A first year unit that develops students' employability skills and explores how to study mathematics at undergraduate level.
-
 
 ## Computational Methods in Ordinary Differential Equations
 
