@@ -7,13 +7,11 @@ author_profile: true
 {% include base_path %}
 {% include toc %}
 
-<script src="/js/toc.js"></script>
-
 During my career I have taught a number of different units across several degree programmes. I currently teach units on linear algebra, programming, computer graphics, numerical methods for ODEs and graduate development and employability.
 
 ## Linear Algebra
 
-A first year unit that introduces students to linear algebra.
+A first year unit that introduces students to linear algebra. Topics include matrices, vectors, co-ordinate geometry, systems of linear equations, vector spaces and linear transformations.
 
 - [Linear algebra lecture notes](https://jonshiach.github.io/LA-book){:target="_blank"}
 
@@ -23,17 +21,23 @@ A first year unit that introduces students to programming in Python and MATLAB. 
 
 ### Python materials
 
-1. [Python basics](/files/Python_materials/1_python_basics.ipynb){:target="_blank"}
-2. [Arrays](/files/Python_materials/2_arrays.ipynb){:target="_blank"}
-3. [If statements](/files/Python_materials/3_if_statements.ipynb){:target="_blank"}
-4. [Loops](/files/Python_materials/4_loops.ipynb){:target="_blank"}
-5. [Functions](/files/Python_materials/5_functions.ipynb){:target="_blank"}
-6. [Plotting](/files/Python_materials/6_plotting.ipynb){:target="_blank"} (you will also need to download the files <a href="/files/Python_materials/flower.jpg" download target="_blank">flower.jpg</a> and  <a href="/files/Python_materials/new_JD_building.jpg" download target="_blank">new_JD_building.jpg</a>.
+1. [Python basics](/files/Python_materials/1_python_basics.ipynb)
+2. [Arrays](/files/Python_materials/2_arrays.ipynb)
+3. [If statements](/files/Python_materials/3_if_statements.ipynb)
+4. [Loops](/files/Python_materials/4_loops.ipynb)
+5. [Functions](/files/Python_materials/5_functions.ipynb)
+6. [Plotting](/files/Python_materials/6_plotting.ipynb) (you will also need to download the files <a href="/files/Python_materials/flower.jpg" download target="_blank">flower.jpg</a> and  <a href="/files/Python_materials/new_JD_building.jpg" download target="_blank">new_JD_building.jpg</a>).
 7. [Symbolic mathematics](/files/Python_materials/7_symbolic_mathematics.ipynb){:target="_blank"}
 
 ### MATLAB materials
 
-
+1. [MATLAB basics](/files/MATLAB_materials/M1_matlab_basics.mlx)
+2. [Arrays](/files/MATLAB_materials/M2_arrays.mlx)
+3. [If statements](/files/MATLAB_materials/M3_if_statements.mlx)
+4. [Loops](/files/MATLAB_materials/M4_loops.mlx)
+5. [Functions](/files/MATLAB_materials/M5_functions.mlx)
+6. [Plotting](/files/MATLAB_materials/M6_plotting.mlx) (you will also need to download the files <a href="/files/Python_materials/flower.jpg" download target="_blank">flower.jpg</a> and  <a href="/files/Python_materials/new_JD_building.jpg" download target="_blank">new_JD_building.jpg</a>).
+7. [Symbolic mathematics](/files/MATLAB_materials/M7_symbolic_mathematics.mlx)
 
 ## Graduate Development and Employability
 
@@ -42,7 +46,7 @@ A first year unit that develops students' employability skills and explores how 
 
 ## Computational Methods in Ordinary Differential Equations
 
-A third year content that covers numerical methods for solving Ordinary Differential Equations (ODEs) and linear systems of equations.
+A third year content that covers numerical methods for solving Ordinary Differential Equations (ODEs) and linear systems of equations. Topics include initial value problems, the Euler method, explicit and implicit Runge-Kutta methods, stability, boundary values problems, solutions to systems of linear equations using direct and indirect methods.
 
 - <a href="https://jonshiach.github.io/ODEs-book/" target="_blank">Runge-Kutta Methods and Linear Algebra Lecture notes</a>
 
