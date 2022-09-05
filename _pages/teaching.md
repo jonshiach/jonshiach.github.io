@@ -11,14 +11,29 @@ author_profile: true
 
 During my career I have taught a number of different units across several degree programmes. I currently teach units on linear algebra, programming, computer graphics, numerical methods for ODEs and graduate development and employability.
 
-## Linear Algebra and Programming Skills
+## Linear Algebra
 
-A first year unit that introduces students to linear algebra, Python and MATLAB programming.
+A first year unit that introduces students to linear algebra.
 
 - [Linear algebra lecture notes](https://jonshiach.github.io/LA-book){:target="_blank"}
-- [Programming skills materials](https://github.com/jonshiach/Programming_skills/archive/refs/heads/main.zip"){:target="_blank"}
 
-The programming skills materials take the form of [Jupyter notebooks](https://jupyter.org/) for Python and [MATLAB live scripts](https://uk.mathworks.com/help/matlab/live-scripts-and-functions.html) for MATLAB. This allows students to enter and execute code in the same document as the instructional material. For instructions on how to download and install Jupyter click [here](/jupyter-notebook)
+## Programming Skills
+
+A first year unit that introduces students to programming in Python and MATLAB. The programming skills materials take the form of [Jupyter notebooks](https://jupyter.org/) for Python and [MATLAB live scripts](https://uk.mathworks.com/help/matlab/live-scripts-and-functions.html) for MATLAB. This allows students to enter and execute code in the same document as the instructional material. For instructions on how to download and install Jupyter click [here](/jupyter-notebook){:target="_blank"}.
+
+### Python materials
+
+1. [Python basics](/files/Python_materials/1_python_basics.ipynb){:target="_blank"}
+2. [Arrays](/files/Python_materials/2_arrays.ipynb){:target="_blank"}
+3. [If statements](/files/Python_materials/3_if_statements.ipynb){:target="_blank"}
+4. [Loops](/files/Python_materials/4_loops.ipynb){:target="_blank"}
+5. [Functions](/files/Python_materials/5_functions.ipynb){:target="_blank"}
+6. [Plotting](/files/Python_materials/6_plotting.ipynb){:target="_blank"} (you will also need to download the files <a href="/files/Python_materials/flower.jpg" download target="_blank">flower.jpg</a> and  <a href="/files/Python_materials/new_JD_building.jpg" download target="_blank">new_JD_building.jpg</a>.
+7. [Symbolic mathematics](/files/Python_materials/7_symbolic_mathematics.ipynb){:target="_blank"}
+
+### MATLAB materials
+
+
 
 ## Graduate Development and Employability
 
