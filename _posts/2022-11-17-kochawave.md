@@ -10,7 +10,7 @@ tags:
 ---
 ![](/images/kochawave.svg)
 
-Whilst browsing twitter the other day this tweet caught my eye about a variation on the famous [Koch curve](https://en.wikipedia.org/wiki/Koch_snowflake) fractal and I thought it would be fun to reproduce it in Python (click [here](/files/Jupter_notebooks/kochawave.ipynb) [Fractals](/files/outreach/Fractals.ipynb) to download the Jupyter notebook).
+Whilst browsing twitter the other day this tweet caught my eye about a variation on the famous [Koch curve](https://en.wikipedia.org/wiki/Koch_snowflake) fractal and I thought it would be fun to reproduce it in Python (click [here](/files/Jupyter_notebooks/kochawave.ipynb) [Fractals](/files/outreach/Fractals.ipynb) to download the Jupyter notebook).
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">The Kochawave curve, a variant of the Koch curve.<br>Beautiful paper by Rémy Sigrist.<a href="https://t.co/Ld0yGRUsn5">https://t.co/Ld0yGRUsn5</a> <a href="https://t.co/FSstqbsBhc">pic.twitter.com/FSstqbsBhc</a></p>&mdash; Luca Moroni (@sfera314) <a href="https://twitter.com/sfera314/status/1587348448205996032?ref_src=twsrc%5Etfw">November 1, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
