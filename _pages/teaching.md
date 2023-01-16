@@ -36,7 +36,8 @@ A third year content that covers numerical methods for solving Ordinary Differen
 
 A second year unit that examines the implementation of mathematics in modern computing applications such as computer graphics used in computer games, digital sound processing and computing mathematics.
 
-- [Computer Graphics Lecture notes](/files/notes/graphics_notes.pdf){:target="_blank"}
+- <a href="https://jonshiach.github.io/graphics-book/" target="_blank">Computer Graphics Lecture Notes</a>
+- [Old Computer Graphics Lecture notes](/files/notes/graphics_notes.pdf){:target="_blank"}
 - [Digital Sound Processing Lecture Notes](/files/notes/sound_processing_notes.pdf){:target="_blank"}
 - [Computing Mathematics Lecture Notes](/files/notes/computing_maths_notes.pdf){:target="_blank"}
 
