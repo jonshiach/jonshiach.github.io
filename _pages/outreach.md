@@ -16,13 +16,13 @@ The outreach materials are written using Jupyter notebooks which makes it easy t
 
 <p style="text-align: center"><img src="/images/mandelbrot.png" width="400" /></p>
 
-<a href="/files/outreach/Fractals.html" target="_blank">Preview (non-interactive)</a>
+<a href="/files/outreach/fractals.html" target="_blank">Preview (non-interactive)</a>
 
 <a href="https://colab.research.google.com/github/jonshiach/Outreach/blob/main/fractals.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 Fractals are complex and beautiful shapes that are generated using a simple set of mathematical rules. This session will introduce participants to some common fractals, show how they are drawn and how we can write Python programs to do this.
 
-<a href="/files/outreach/Fractals.ipynb" download>Download notebook</a>
+<a href="/files/outreach/fractals.ipynb" download>Download notebook</a>
 
 ## Chaos
 
