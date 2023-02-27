@@ -66,9 +66,9 @@ This session will introduce participants to a mathematical modelling technique c
 
 The outreach materials are written in Jupyter which makes it easy to enter and execute Python code. The individual notebooks for the various sessions can be downloaded by clicking on the links below.
 
-- [Fractals](/files/outreach/Fractals.ipynb)
-- [Chaos](/files/outreach/Chaos.ipynb) (you will also need to download [this file](/files/outreach/animations.py) to the same directory)
-- [Mathematics of music](/files/outreach/Music.ipynb) (you will also need to download the audio file <a href="/files/outreach/Fur_elise.wav" download>Fur_elise.wav</a> to the same directory)
-- [Mathematical a zombie outbreak](/files/outreach/Zombie.ipynb)
+- [Fractals](/files/outreach/fractals.ipynb)
+- [Chaos](/files/outreach/chaos.ipynb) (you will also need to download [this file](/files/outreach/animations.py) to the same directory)
+- [Mathematics of music](/files/outreach/music.ipynb) (you will also need to download the audio file <a href="/files/outreach/Fur_elise.wav" download>Fur_elise.wav</a> to the same directory)
+- [Mathematical a zombie outbreak](/files/outreach/zombie.ipynb)
 
 Instructions on how to run Jupyter notebooks is given [here](/jupyter-notebook){:target="_blank"}.
