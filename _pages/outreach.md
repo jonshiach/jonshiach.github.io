@@ -28,13 +28,13 @@ Fractals are complex and beautiful shapes that are generated using a simple set 
 
 <p style="text-align: center"><img src="/images/lorenz.png" width="300" /></p>
 
-<a href="/files/outreach/chaos.html" target="_blank">Preview (non-interactive)</a>
+<!-- <a href="/files/outreach/chaos.html" target="_blank">Preview (non-interactive)</a> -->
 
 <a href="https://colab.research.google.com/github/jonshiach/Outreach/blob/main/chaos.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 You may have heard of the Butterfly effect which comes from the question *“Does the flap of a butterfly’s wings in Brazil set off a tornado in Texas?”*, in other words, can a very small change in a system result in large changes elsewhere? This is what mathematicians refer to as chaos and in this session participants will be introduced to some examples of chaotic behaviour in relatively simple systems such as the motion of a double pendulum and the orbits of bodies acting under gravity.  
 
-<a href="/files/outreach/chaos.ipynb" download>Download notebook</a>
+<!-- <a href="/files/outreach/chaos.ipynb" download>Download notebook</a> -->
 
 ## Mathematics of music
 
@@ -60,9 +60,9 @@ The creation of electronic music and the streaming of music over the internet us
 
 This session will introduce participants to a mathematical modelling technique called *agent-based modelling* where individual autonomous agents which could be a single animal or person are given rules to govern their behaviour. For example, in a social distancing situation each agent will want to avoid getting too close to another agent. We can use agent-based modelling to build mathematical models that simulate the motion of a flock of birds and the transmission of infectious diseases such as Covid or a zombie outbreak (unlikely to happen but you never know).
 
-<a href="/files/outreach/zombie.ipynb" download>Download notebook</a>
+<!-- <a href="/files/outreach/zombie.ipynb" download>Download notebook</a> -->
 
-## Downloads
+<!-- ## Downloads
 
 The outreach materials are written in Jupyter which makes it easy to enter and execute Python code. The individual notebooks for the various sessions can be downloaded by clicking on the links below.
 
@@ -71,4 +71,4 @@ The outreach materials are written in Jupyter which makes it easy to enter and e
 - [Mathematics of music](/files/outreach/music.ipynb) (you will also need to download the audio file <a href="/files/outreach/Fur_elise.wav" download>Fur_elise.wav</a> to the same directory)
 - [Mathematical a zombie outbreak](/files/outreach/zombie.ipynb)
 
-Instructions on how to run Jupyter notebooks is given [here](/jupyter-notebook){:target="_blank"}.
+Instructions on how to run Jupyter notebooks is given [here](/jupyter-notebook){:target="_blank"}. -->
